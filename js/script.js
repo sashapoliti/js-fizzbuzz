@@ -11,6 +11,11 @@ let numBox = 100; //max number boxes
 let tmpHtml = ''; //string html
 
 for(let i = 1; i <= numBox; i++){
+
+    if (i % 3 === 0 && i % 5 === 0) {
+      let content = 'fizzbuzz';
+      tmpHtml += ` <div class="box fizzbuzz d-flex justify-content-center align-items-center">${content}</div>`;
+    }
     let content = i;
     tmpHtml += ` <div class="box d-flex justify-content-center align-items-center">${content}</div>`;
 };
