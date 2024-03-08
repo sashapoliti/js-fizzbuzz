@@ -12,7 +12,7 @@ let tmpHtml = ''; //string html
 
 for(let i = 1; i <= numBox; i++){
     let content = i;
-    tmpHtml += ` <div class="box">${content}</div>`;
+    tmpHtml += ` <div class="box d-flex justify-content-center align-items-center">${content}</div>`;
 };
 
 wrapper.innerHTML = tmpHtml; //string html full of boxes in wrapper
