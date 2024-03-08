@@ -5,3 +5,16 @@
 // num % 3, num % 5,num % 3 && num %5
 
 const wrapper = document.createElement('div'); //create div
+wrapper.className = 'd-flex align-content-center flex-wrap'; //add class
+
+let numBox = 100; //max number boxes
+let tmpHtml = ''; //string html
+
+for(let i = 1; i <= numBox; i++){
+    let content = i;
+    tmpHtml += ` <div class="box">${content}</div>`;
+};
+
+wrapper.innerHTML = tmpHtml; //string html full of boxes in wrapper
+const container = document.querySelector('.container'); //take container
+container.append(wrapper); //append wrapper in container
