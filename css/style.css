@@ -1,0 +1,13 @@
+/* general */
+body {
+    background-color: #083B4C;;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* main */
+
+main section div.container {
+    max-width: 700px;
+}
