@@ -10,14 +10,22 @@ wrapper.className = 'd-flex align-content-center flex-wrap'; //add class
 let numBox = 100; //max number boxes
 let tmpHtml = ''; //string html
 
-for(let i = 1; i <= numBox; i++){
+for(let i = 1; i <= numBox; i++) /* cycle for 100 boxes */ {
 
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) /* multiples of 3 and 5 */ {
       let content = 'fizzbuzz';
       tmpHtml += ` <div class="box fizzbuzz d-flex justify-content-center align-items-center">${content}</div>`;
+    } else if (i % 3 === 0) /* multiples of 3 */ {
+        let content = 'fizz';
+        tmpHtml += ` <div class="box fizz d-flex justify-content-center align-items-center">${content}</div>`;
+    } else if (i % 5 === 0) /* multiples of 5 */ {
+        let content = 'buzz';
+        tmpHtml += ` <div class="box buzz d-flex justify-content-center align-items-center">${content}</div>`;
+    } else /* none of the cases */ {
+        let content = i;
+        tmpHtml += ` <div class="box d-flex justify-content-center align-items-center">${content}</div>`;
     }
-    let content = i;
-    tmpHtml += ` <div class="box d-flex justify-content-center align-items-center">${content}</div>`;
+    
 };
 
 wrapper.innerHTML = tmpHtml; //string html full of boxes in wrapper

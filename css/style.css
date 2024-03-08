@@ -24,3 +24,9 @@ main section div.container {
 .fizzbuzz {
     background-color: #F0466F;
 }
+.fizz {
+    background-color: #0AD6A0;
+}
+.buzz {
+    background-color: #FFD166;
+}
